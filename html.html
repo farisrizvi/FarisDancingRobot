@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+
+.stage {
+top: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top: 0px;
+width: 90%;
+height: 800px;
+background: lightblue;
+border-style: solid;
+border-width: 5px;
+border-color: black;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+}
+
+.wholebody {
+background: lightblue;
+
+/* To hide uncomment this*/
+/* background: #ddd; */
+
+margin-left: 10px;
+margin-top: -20px;
+width: 240px;
+height: 400px;
+margin-top: 160px;
+;
+animation: geeks 30s;
+animation-iteration-count: 1;
+
+}
+
+@keyframes geeks {
+    0% {
+margin-left: 50%;
+}
+
+4.1% {
+margin-left: 12%;
+}
+
+8.2% {margin-left:50%;
+margin-left: 75%;
+}
+
+12.3% {
+margin-left: 12%;
+}
+
+16.4% {
+margin-left: 35%;
+}
+
+40% {
+margin-left: 35%;
+}
+
+
+45.0% {
+margin-left: 50%;
+}
+
+45.5% {
+margin-left: 12%;
+}
+
+50.0% {margin-left:50%;
+margin-left: 75%;
+}
+
+54.0% {
+margin-left: 12%;
+}
+
+55.6% {
+margin-left: 35%;
+}
+
+56.6% {
+margin-left: 35%;
+}
+ 
+56.6% {
+margin-left: 35%;
+}
+
+
+
+
+
+
+
+83.3% {
+margin-left: 35%;
+}
+
+
+
+
+100% {
+margin-left: 35%;
+}
+}
+
+
+
+
+
+
+.head {
+background:black;
+width: 50%;
+height: 60px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 50%;
+}
+
+.body {
+background: black;
+width: 40%;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10%;
+display: inline-block;
+}
+.left-arm {
+
+background:black;
+width: 20%;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10%;display: inline-block;
+animation: larmfunction 30s;
+animation-iteration-count: 1;
+transform-origin: 100% 0%; }
+
+
+@keyframes larmfunction{
+   
+   0% {
+    transform: rotate(0deg);
+    
+   }
+
+   16.4% {
+    
+    transform: rotate(120deg);
+    }
+    
+    
+   20.5% {
+    
+    transform: rotate(0deg);
+    }
+   
+ 25.5% {
+     transform: rotate(120deg);}
+
+     30.5% {
+     transform: rotate(0deg);}
+
+    75% {
+     transform: rotate(120deg);}
+   
+    100% {
+     transform: rotate(0deg);}
+    
+}
+
+.left-arm2 {
+    border-radius: 10%;display: inline-block;
+animation: larmfunction2 8s;
+animation-delay: 17s; }
+
+@keyframes larmfunction2{
+   
+    0% {
+ transform: rotate(0deg);;
+}
+
+16.56% {
+transform: rotate(120deg);
+}
+
+30.6% { 
+transform: rotate(0deg);
+    
+}
+
+45.5% {
+transform: rotate(120deg);
+}
+
+
+60.6% {
+transform: rotate(0deg);
+}
+
+75.6% {
+transform: rotate(120deg);
+}
+
+
+83.3% {
+transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(0deg);
+}
+
+}
+
+
+    
+
+.Right-arm {
+    background:green;
+width: 20%;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+transform-origin: 0% 0%;
+border-radius: 10%;display: inline-block;
+animation: rarmfunction 7s;
+animation-iteration-count: 1;
+animation-delay: 5s;
+}
+
+@keyframes rarmfunction{
+
+    0% {  transform: rotate(0deg); }
+
+     16.4% {
+      transform: rotate(-50deg);}
+
+     20.5% {
+     transform: rotate(0deg);}
+    
+
+     25.5% {
+     transform: rotate(-50deg);}
+
+     30.5% {
+     transform: rotate(0deg);}
+
+     35.5% {
+     transform: rotate(-50deg);}
+    
+     40% {
+     transform: rotate(0deg);
+    }
+
+}
+
+
+.Right-arm2 {
+
+ background:black;
+width: 20%;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+transform-origin: 0% 0%;
+border-radius: 10%;display: inline-block;
+animation: rarmfunction 7s;
+animation-iteration-count: 1;
+animation-delay: 5s;display:none
+
+
+}
+
+
+ @keyframes rarmfunction2{
+
+0% {  transform: rotate(-50deg); }
+
+ 16.6% {
+  transform: rotate(0deg);}
+
+ 30.6% {
+ transform: rotate(-50deg);}
+
+
+45.6% {
+ transform: rotate(0deg);}
+
+ 60.6% {
+ transform: rotate(-50deg);}
+
+
+
+ 75.6% {
+ transform: rotate(0deg);}
+
+ 83.3% {
+ transform: rotate(-50deg);
+}
+100% {
+ transform: rotate(0deg);}
+
+}
+ 
+
+ 
+
+
+.stump{
+    background: black;
+width: 30%;
+height:90px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <video width="320" height="240" controls>
+        <source src="video/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+<div class="stage">
+
+<div class="wholebody">
+<div class="head"></div>
+ <div class="left-arm left-arm2"></div> 
+<div class="body"></div>
+<div class="Right-arm"></div>
+<div class=" Right-arm2"></div>
+<div class="stump"></div>
+</div>
+</div>
+
+</body>
+
+
+
+
+
+
+</html>
